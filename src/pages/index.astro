@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import photoImg from '../assets/photo.png';
+import SocialLinks from '../components/SocialLinks';
+---
+
+<Layout title="Alpamys Makazhan - Home">
+	<div class="min-h-screen flex items-center justify-center px-6">
+		<div class="max-w-4xl mx-auto text-center animate-fade-in">
+			<!-- Avatar -->
+			<div class="mb-8 flex justify-center">
+				<div class="relative">
+					<Image 
+						src={photoImg} 
+						alt="Alpamys Makazhan" 
+						class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-2xl ring-4 ring-white dark:ring-slate-700"
+						width={320}
+						height={320}
+					/>
+				</div>
+			</div>
+
+			<!-- Hero Text -->
+			<div class="space-y-6 mb-12 animate-slide-up">
+				<h1 class="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
+					Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Alpamys</span>
+				</h1>
+				<p class="text-xl md:text-2xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+					A Computer Science student from Kazakhstan passionate about building global, impactful tech products with AI and data.
+				</p>
+			</div>
+
+			<!-- Download CV Button -->
+			<div class="mb-10">
+				<a 
+					href="/src/assets/CV.pdf" 
+					download
+					class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+				>
+					<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+					</svg>
+					Download CV
+				</a>
+			</div>
+
+			<!-- Social Links -->
+			<SocialLinks client:load />
+		</div>
+	</div>
+</Layout>

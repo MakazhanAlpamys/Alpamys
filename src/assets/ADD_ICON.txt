@@ -1,0 +1,23 @@
+IMPORTANT: ADD ICON.PNG FILE
+================================
+
+Please add an icon.png file to this folder (src/assets/icon.png)
+
+This icon will be used for:
+1. Browser favicon (tab icon)
+2. Logo in the navigation bar (top left corner)
+
+Recommended specifications:
+- Format: PNG
+- Size: 512x512px (or at least 256x256px)
+- Square image
+- Should look good when scaled down to 32x32px
+- Transparent background recommended
+
+The icon should represent you or your brand. Ideas:
+- Your initials (A.M.)
+- A simple logo design
+- A minimalist coding icon
+- Any symbol that represents your work
+
+After adding the file, it will automatically appear in the browser tab and navigation bar.

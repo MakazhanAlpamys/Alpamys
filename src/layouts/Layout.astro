@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+import ThemeToggle from '../components/ThemeToggle';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Alpamys Makazhan - Computer Science Student & Developer" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/src/assets/icon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+			<div class="max-w-6xl mx-auto px-6 py-4">
+				<div class="flex justify-between items-center">
+					<a href="/" class="flex items-center gap-3 text-2xl font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+						<img src="/src/assets/icon.png" alt="Logo" class="w-8 h-8 rounded-lg" />
+						Alpamys
+					</a>
+					<div class="flex items-center gap-6">
+						<div class="flex gap-6">
+							<a href="/" class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Home</a>
+							<a href="/projects" class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Projects</a>
+							<a href="/about" class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">About</a>
+							<a href="/contact" class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Contact</a>
+						</div>
+						<ThemeToggle client:load />
+					</div>
+				</div>
+			</div>
+		</nav>
+		<main class="pt-20">
+			<slot />
+		</main>
+	</body>
+</html>

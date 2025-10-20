@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Qamqor — Co-Founder, Mini-App for Financial Literacy",
+    "description": "Built a super-app mini-platform helping retirees improve financial literacy through interactive tips and guidance.",
+    "technologies": ["React.js", "Node.js", "PostgreSQL"],
+    "github": "https://github.com/MakazhanAlpamys/QamQor2.0"
+  },
+  {
+    "id": 2,
+    "title": "YieldFlow — AI-Driven DeFi Yield Management Platform on Solana",
+    "description": "Developed an intelligent yield optimization platform combining AI analytics and community features for DeFi users.",
+    "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Solana Web3.js", "Raydium", "Orca", "Jupiter", "Helius", "Socket.io", "Machine Learning"],
+    "github": "https://github.com/MakazhanAlpamys/YieldFlow"
+  },
+  {
+    "id": 3,
+    "title": "NASA Exoplanet Detection AI — Research Project",
+    "description": "Created an advanced ML system to detect exoplanets using NASA Kepler, K2, and TESS mission data with explainable AI and validation pipelines.",
+    "technologies": ["Python", "Streamlit", "LightGBM", "XGBoost", "RandomForest", "SHAP", "Pandas", "Scikit-learn"],
+    "github": "https://github.com/MakazhanAlpamys/NASA-Exoplanet-Detection-AI"
+  },
+  {
+    "id": 4,
+    "title": "FairTender — Suspicious Government Procurement Analysis",
+    "description": "Built interpretable ML model for detecting suspicious tenders using supplier and transaction data with visual explainability.",
+    "technologies": ["Python", "Streamlit", "XGBoost", "SHAP", "Scikit-learn", "Matplotlib", "Pandas", "Seaborn"],
+    "github": "https://github.com/MakazhanAlpamys/FairTender"
+  },
+  {
+    "id": 5,
+    "title": "Chess.AI — AI-Powered Chess Learning Platform",
+    "description": "Developed an intelligent training environment with adaptive AI difficulty, interactive puzzles, and multilingual interface.",
+    "technologies": ["React.js", "Node.js", "Express.js", "PostgreSQL", "chess.js", "react-chessboard", "i18next"],
+    "github": "https://github.com/MakazhanAlpamys/ChessAi"
+  }
+]
